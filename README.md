@@ -54,3 +54,33 @@ ______
 ## Goals
 - Get used to do TDD from the beginning of the project
 - Have a tool that allows devs to effectively and quickly provide a project delivery date
+
+______
+
+## Commands
+Run `github actions` locally using [act](https://github.com/nektos/act):
+- Required gems:
+  - [`bundler-audit`](https://github.com/rubysec/bundler-audit) for auditioning gem versions
+  - [`brakeman`](https://github.com/presidentbeef/brakeman) for vulnerability check
+  - [`standard`](https://github.com/testdouble/standard) for linters
+- Keep in mind that you also need Docker for using `act`.
+```bash
+act --container-architecture linux/amd64 pull_request
+```
+
+Create `binstubs` to run the action commands locally/in docker:
+```bash
+bundle binstubs bundler-audit
+bundle binstubs brakeman
+bundle binstubs standard
+```
+
+Running `standard` for linter corrections:
+```bash
+bin/standardrb --fix
+```
+
+Running `Rails inbuilt testing`:
+```bash
+rails test:all
+```
