@@ -1,13 +1,11 @@
 # dev-estimation
 Tool to estimate a project delivery date based on keywords assumptions
 
-## Current Stage (Last updated at 19/JUN/2022)
-This project is still in its early stages, so there's pretty much nothing here!
+## Current Stage (Last updated at 01/JUL/2022)
+Setup user authentication
 
 I also wouldn't suggest contributing (PR) yet as there'll most likely be many changes to the app and its goals.
-
 But feel free to suggest features, ideas, or anything, and even post them on issues!
-
 Issues or suggestions are more than welcome! You can mail me at frpm1001@gmail.com
 
 ______
